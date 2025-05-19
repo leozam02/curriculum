@@ -10,11 +10,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header>
     <h1>Leonardo Zambrano</h1>
     <p>Estudiante de Ciencias Computacionales | ltzambra@espol.edu.ec </p>
   </header>
+
+  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    <img src="https://placehold.co/150x150" alt="Foto de perfil" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
+  </div>
+
 
   <nav>
     <ul>
@@ -23,6 +27,8 @@
       <li><a href="#educacion">Educación</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#referencias">Referencias</a></li>
     </ul>
   </nav>
 
@@ -43,8 +49,9 @@
     <section id="educacion">
       <h2>Educación</h2>
       <ul>
-        <li><strong>ESPOL</strong> – Ciencias Computacionales (4to semestre)</li>
+        <li><strong>ESPOL</strong> – Ciencias Computacionales (5to semestre)</li>
         <li><strong>Liceo Naval Guayaquil</strong> – Bachiller en Ciencias, graduado con honores</li>
+        <li><strong>CEN Centro Ecuatoriano Norteamericano</strong> – Estudiante graduado nivel B2+</li>
       </ul>
     </section>
 
@@ -56,17 +63,176 @@
         <li>Redes, HTML, JavaScript</li>
         <li>Trabajo en equipo, liderazgo, comunicación</li>
       </ul>
+      <h3>Resumen de habilidades</h3>
+        <table style="border-collapse: collapse; width: 100%;">
+          <tr>
+            <th></th>
+            <th>Básico</th>
+            <th>Intermedio</th>
+            <th>Avanzado</th>
+          </tr>
+          <tr>
+            <th>Java</th>
+            <td></td>
+            <td></td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <th>Python</th>
+            <td></td>
+            <td></td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <th>C</th>
+            <td>✔️</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>HTML</th>
+            <td>✔️</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>SQL</th>
+            <td></td>
+            <td>✔️</td>
+            <td></td>
+          </tr>
+        </table>
+
+      <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/_hqEPxqkCYg" 
+          title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+        <span style="font-weight: bold; margin-top: 10px; text-align: center; display: block;">
+          Exposición y explicación de proyecto de venta de carros usando estructuras de datos en Java
+        </span>
+      </div>
     </section>
 
     <section id="proyectos">
       <h2>Proyectos</h2>
-      <ul>
+      <ol>
         <li>Bot de Telegram para recibos – Extracción de datos automática</li>
         <li>Base de datos para hospital – Gestión de consultas médicas</li>
         <li>Apps en JavaFX y Android – Juegos y ventas de productos</li>
-      </ul>
+      </ol>
     </section>
+
+     <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Si deseas conocer más sobre mi trabajo o colaborar en algún proyecto, puedes contactarme a través de las siguientes plataformas:</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/leonardozambrano" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/leonardozambrano" target="_blank">GitHub</a></li>
+        <li>Email: <a href="mailto:ltzambra@espol.edu.ec">ltzambra@espol.edu.ec</a></li>
+      </ul>
+
+      <h3>Ubicación</h3>
+      <p>Escuela Superior Politécnica del Litoral (ESPOL), Guayaquil - Ecuador</p>
+      <div class="mapa-centro">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6270030991525!2d-79.96765123042646!3d-2.147747137222699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6ddf217f8a35%3A0x54e0b8b7e6b08d26!2sESPOL%20-%20Escuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1686352712292!5m2!1ses!2sec" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <h3>Formulario de contacto</h3>
+      <form action="#" method="post" style="display: flex; flex-direction: column; gap: 12px; max-width: 500px; margin: 0 auto;">
+        <!-- Texto en una línea -->
+        <label>
+          Nombre completo:
+          <input type="text" name="nombre" required>
+        </label>
+
+        <!-- Lista desplegable -->
+        <label>
+          Motivo de contacto:
+          <select name="motivo" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="colaboracion">Colaboración</option>
+            <option value="consulta">Consulta</option>
+            <option value="propuesta">Propuesta de proyecto</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+
+        <!-- Conjunto de opciones relacionadas (radio) -->
+        <fieldset style="border: none; padding: 0;">
+          <legend>¿Prefiere ser contactado por?</legend>
+          <label><input type="radio" name="contacto_preferencia" value="email" required> Email</label>
+          <label><input type="radio" name="contacto_preferencia" value="telefono" required> Teléfono</label>
+          <label><input type="radio" name="contacto_preferencia" value="whatsapp" required> WhatsApp</label>
+        <!-- En caso de que queramos que se seleeccione todo 
+         simplemente debemos hacer que sus names tengan nombre diferente -->
+        </fieldset>
+
+        <!-- Vector de valores (checkbox) -->
+        <fieldset style="border: none; padding: 0;">
+          <legend>Áreas de interés</legend>
+          <label><input type="checkbox" name="interes[]" value="desarrollo" required> Desarrollo</label>
+          <label><input type="checkbox" name="interes[]" value="basesdedatos" required> Bases de datos</label>
+          <label><input type="checkbox" name="interes[]" value="ia" required> Inteligencia Artificial</label>
+          <label><input type="checkbox" name="interes[]" value="otros" required> Otros</label>
+        </fieldset>
+
+        <!-- Área de texto -->
+        <label>
+          Mensaje:
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="referencias">
+      <h2>Referencias</h2>
+      <article>
+        <blockquote>
+          "Leonardo demostró gran iniciativa y compromiso en cada proyecto que lideró, aportando soluciones innovadoras y eficientes."
+        </blockquote>
+        <p>
+          <span>María Fernanda Torres<span><br>
+          Gerente de Proyectos, Academia APOL<br>
+          María trabajó con Leonardo durante el desarrollo de materiales educativos y destaca su capacidad para resolver problemas y su excelente comunicación con el equipo.
+        </p>
+      </article>
+      <article>
+        <blockquote>
+          "Su habilidad para trabajar en equipo y adaptarse a nuevos retos fue clave para el éxito de nuestro sistema de gestión de datos."
+        </blockquote>
+        <p>
+          <span>Carlos Jiménez</span><br>
+          Coordinador de TI, CIAP - ESPOL<br>
+          Carlos fue supervisor de Leonardo en el área de desarrollo de bots y bases de datos, resaltando su responsabilidad y proactividad.
+        </p>
+      </article>
+      <article>
+        <blockquote>
+          "Leonardo es un profesional dedicado, siempre dispuesto a aprender y a colaborar en proyectos multidisciplinarios."
+        </blockquote>
+        <p>
+          <span>Andrea Ruiz</strong><span>
+          Líder de Innovación, Proyecto Hospital Digital<br>
+          Andrea colaboró con Leonardo en la implementación de soluciones tecnológicas para la gestión médica, valorando su ética de trabajo y creatividad.
+        </p>
+      </article>
+  </section>
+
   </main>
+
+
 
   <footer>
     <p>© Leonardo Zambrano - 2025</p>
@@ -78,3 +244,4 @@
 
 </body>
 </html>
+
