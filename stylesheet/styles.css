@@ -1,0 +1,68 @@
+/* Aplica la fuente a todos los elementos */
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centra y pone en negrita el título principal */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Tangerine', serif;
+    /*usar  la fuente Tangerine de la api google*/ 
+}
+#photo {
+
+    /* Ancho del elemento */
+    width: auto;
+
+    /* Alto del elemento */
+    height: auto;
+}
+
+.subtitle {
+
+    /* Color del texto en rgba */
+    color: rgb(151 156 165 / 0.89);
+
+    /* Transformación del texto a mayúsculas */
+    text-transform: uppercase;
+}
+
+footer p {
+
+    /* Alineación del texto a la derecha */
+    text-align: right;
+
+    /* Estilo de fuente itálica */
+    font-style: italic;
+
+}
+
+nav > ul {
+
+    /* Eliminar los estilos de lista predeterminados */
+    list-style: none;
+
+}
+
+section {
+
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd;
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px;
+
+    /* relleno (espacio interno) de
+    1.5% en la parte superior e inferior y
+    0.8% a los lados derecho e izquierdo. */
+
+    padding: 1.5% 0.8%;
+
+    /* Margen inferior ajustado */
+    margin-bottom: 1.2rem;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+}
