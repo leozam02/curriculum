@@ -11,21 +11,21 @@
   <!-- Api de google  -->
   <link rel="stylesheet" href="./stylesheet/styles.css">
   <!-- CARPETA QUE CONTENGA EL ARCHIVO CSS -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <header>
-    <h1>Leonardo Zambrano</h1>
-    <p>Estudiante de Ciencias Computacionales | ltzambra@espol.edu.ec </p>
+    
   </header>
 
-  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-    <img src="https://placehold.co/150x150" alt="Foto de perfil" id="photo" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
-  </div>
 
 
-  <nav>
+
+  <nav class="navbar">
+    <a href="#" class="logo">Curriculum</a>
     <ul>
-      <li><a href="#resumen">Resumen</a></li>
+      <li><a class="active" href="#resumen">Resumen</a></li>
+      <li><a href="#formacion">Formacion</a></li>
       <li><a href="#experiencia">Experiencia</a></li>
       <li><a href="#educacion">Educación</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
@@ -36,37 +36,101 @@
   </nav>
 
   <main>
-    <section id="resumen">
-      <h2 class="subtitle">Resumen</h2>
-      <p>Estudiante de Computación con conocimientos en Java, Python, SQL y redes. Me destaco por mi liderazgo, aprendizaje rápido y trabajo en equipo. Apasionado por el desarrollo de soluciones tecnológicas y la inteligencia artificial.</p>
+    <section class="resumen" id="resumen">
+      <div class="resume-info">   
+          <h1>Hi everyone, Im Leonardo Zambrano</h1>
+          <h2 class="subtitle">Estudiante de Ciencias Computacionales</h2>
+          
+          <p> Tengo conocimientos en Java, Python, SQL y redes. Me destaco por mi liderazgo, aprendizaje rápido y trabajo en equipo.
+            He trabajado en distintos proyectos innovadores que podrás ver más a fondo en está página web.
+             Apasionado por el desarrollo de 
+            soluciones tecnológicas, ciencia y análisis de datos, como también proponer soluciones a algoritmos eficientes y la inteligencia 
+            artificial.</p>
+          <div >
+            <a href="./docs/micv.pdf" class="btn" download="CV_Leonardo_Zambrano.pdf">Descargar CV</a>
+          </div>
+      </div>
+      <div class="resume-image">
+        <div class="image-container">          
+          <img src="./img/Perfil.jpeg" alt="Leonardo Zambrano" class="profile-image"> 
+        </div>
+      </div>
     </section>
 
-    <section id="experiencia">
-      <h2 class="subtitle">Experiencia</h2>
-      <ul>
-        <li><strong>Profesor de Matemáticas</strong> – Academia APOL (Feb - Abr 2024)</li>
 
-      </ul>
+    <section class="formacion" id="formacion">
+      <h2 class="sss">Educación & Experiencia</h2>
+      <div class="formacion-container">
+        
+        <div class="formacion-block">
+          <h3>Experiencia</h3>
+          <ul>
+            <li>
+              <strong>Profesor de Matemáticas</strong><br>
+              <em>Academia APOL (Feb - Abr 2024)</em><br>
+              Apoyo en clases, desarrollo de materiales y tutorías personalizadas.
+            </li>
+            <!-- Puedes agregar más experiencias -->
+          </ul>
+        </div>
+
+        <div class="formacion-block">
+          <h3>Educación</h3>
+          <ul>
+            <li>
+              <strong>ESPOL</strong><br>
+              <em>Ciencias Computacionales </em><br>
+              5to semestre
+            </li>
+            <li>
+              <strong>Liceo Naval Guayaquil</strong><br>
+              <em>Bachiller en Ciencias</em><br>
+              Graduado con honores.
+            </li>
+            <li>
+              <strong>CIAP Club Inteligencia Artificial</strong><br>
+              <em>Miembro Activo</em><br>
+              2024 - Presente
+            </li>
+            <li>
+              <strong>Cen Centro Ecuatoriano Norteamericano</strong><br>
+              <em>Estudiante Graduado</em><br>
+              ECCE-TEST Certification B2+
+            </li>
+          </ul>
+        </div>
+
+      </div>
     </section>
 
-    <section id="educacion">
-      <h2 class="subtitle">Educación</h2>
-      <ul>
-        <li><strong>ESPOL</strong> – Ciencias Computacionales (5to semestre)</li>
-        <li><strong> CIAP Club de Inteligencia Artificial  </strong> – Integrante Activo (2024 - Actualidad)</li>
-        <li><strong>Liceo Naval Guayaquil</strong> – Bachiller en Ciencias, graduado con honores</li>
-        <li><strong>CEN Centro Ecuatoriano Norteamericano</strong> – Estudiante graduado nivel B2+</li>
-      </ul>
-    </section>
 
-    <section id="habilidades">
-      <h2 class="subtitle">Habilidades</h2>
-      <ul>
-        <li>Lenguajes: Java, Python, C</li>
-        <li>Herramientas: SQL, Pandas, Matplotlib, JavaFX, N8N</li>
-        <li>Redes, HTML, JavaScript</li>
-        <li>Trabajo en equipo, liderazgo, comunicación</li>
-      </ul>
+    <section id="habilidades" class="habilidades">
+      <h2 class="subtitle center">Habilidades</h2>
+
+      <h3 class="habilidad-categoria">Lenguajes</h3>
+      <div class="habilidad-items">
+        <div class="item"><i class='bx bxl-java'></i>Java</div>
+        <div class="item"><i class='bx bxl-python'></i>Python</div>
+        <div class="item"><i class='bx bx-code-alt'></i>C</div>
+      </div>
+
+      <h3 class="habilidad-categoria">Herramientas</h3>
+      <div class="habilidad-items">
+        <div class="item"><i class='bx bx-data'></i>SQL</div>
+        <div class="item"><i class='bx bx-line-chart'></i>Pandas</div>
+        <div class="item"><i class='bx bx-bar-chart'></i>Matplotlib</div>
+        <div class="item"><i class='bx bx-layer'></i>JavaFX</div>
+        <div class="item"><i class='bx bx-network-chart'></i>N8N</div>
+      </div>
+
+      <h3 class="habilidad-categoria">Redes & Web</h3>
+      <div class="habilidad-items">
+        <div class="item"><i class='bx bx-sitemap'></i>Redes</div>
+        <div class="item"><i class='bx bxl-html5'></i>HTML</div>
+        <div class="item"><i class='bx bxl-javascript'></i>JavaScript</div>
+      </div>
+
+ 
       <h3>Resumen de habilidades</h3>
         <table style="border-collapse: collapse; width: 100%;">
           <tr>
@@ -128,17 +192,30 @@
       </ol>
     </section>
 
-     <section id="contacto">
+     <section id="contacto" class="contacto">
       <h2 class="subtitle">Contacto</h2>
-      <p>Si deseas conocer más sobre mi trabajo o colaborar en algún proyecto, puedes contactarme a través de las siguientes plataformas:</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/leonardozambrano" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/leonardozambrano" target="_blank">GitHub</a></li>
-        <li>Correo: <a href="mailto:ltzambra@espol.edu.ec">ltzambra@espol.edu.ec</a></li>
-      </ul>
+      <h3>Redes Sociales</h3>
+      <!-- <p class="info-contact">Si deseas conocer más sobre mi trabajo o colaborar en algún proyecto, puedes contactarme a través de las siguientes plataformas:</p> -->
+      <div class="btn-sci">
+        <div class="Github">
+          <a href="https://github.com/leozam02"><i class='bx bxl-github'></i></a>
+          <p>GitHub</p>
+        </div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH31tuQX8YEAgAAAZcE_m9oJY5TfGb5pJ7WF8z5VRXWVfHAOXbllBWgHGy7tQPKKpCNrv2yUT_hr5aHgnTWoCchU_PC5rRqzv0pYZS-W6zAzXSrzhlmHRWqq8j_mXEUU8NoOtw=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fleonardo-thomas-zambrano-toala-43b236277%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"><i class='bx bxl-linkedin'></i></a>
+          <p>LinkedIn</p>
+        </div>
+        <div class="Correo">
+          <a href="mailto:ltzambra@espol.edu.ec"><i class='bx bx-envelope'></i></i></a>
+          <p>Correo</p>
+        </div>
+
+
+      </div>
 
       <h3>Ubicación</h3>
-      <p>Escuela Superior Politécnica del Litoral (ESPOL), Guayaquil - Ecuador</p>
+      <p class="ubicacion-texto">Escuela Superior Politécnica del Litoral (ESPOL), Guayaquil - Ecuador</p>
+
       <div class="mapa-centro">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6270030991525!2d-79.96765123042646!3d-2.147747137222699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6ddf217f8a35%3A0x54e0b8b7e6b08d26!2sESPOL%20-%20Escuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1686352712292!5m2!1ses!2sec" 
@@ -184,10 +261,10 @@
         <!-- Vector de valores (checkbox) -->
         <fieldset style="border: none; padding: 0;">
           <legend>Áreas de interés</legend>
-          <label><input type="checkbox" name="interes[]" value="desarrollo" required> Desarrollo</label>
-          <label><input type="checkbox" name="interes[]" value="basesdedatos" required> Bases de datos</label>
+          <label><input type="checkbox" name="interes[]" value="desarrollo" required> Desarrollo</label> 
+          <label><input type="checkbox" name="interes[]" value="basesdedatos" required> Bases de datos</label> 
           <label><input type="checkbox" name="interes[]" value="ia" required> Inteligencia Artificial</label>
-          <label><input type="checkbox" name="interes[]" value="otros" required> Otros</label>
+          <label><input type="checkbox" name="interes[]" value="otros" required> Otros</label> 
         </fieldset>
 
         <!-- Área de texto -->
